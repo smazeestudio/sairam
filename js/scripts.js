@@ -7,7 +7,7 @@ jQuery(function ($) {
     // --------------------------------------------------------------------
 
     (function () {
-        $('#preloader').delay(200).fadeOut('slow');
+        $('#preloader').delay(0).fadeOut('slow');
     }());
 
     // --------------------------------------------------------------------
@@ -59,14 +59,13 @@ jQuery(function ($) {
         if ($('#googleMap').length > 0) {
 
             //set your google maps parameters
-            var $latitude  = 48.869319, //If you unable to find latitude and longitude of your address. Please visit http://www.latlong.net/convert-address-to-lat-long.html you can easily generate.
-                $longitude = 2.354261,
-                $map_zoom  = 18;
+            var $latitude  =12.9592409, //If you unable to find latitude and longitude of your address. Please visit http://www.latlong.net/convert-address-to-lat-long.html you can easily generate.
+                $longitude = 80.0560118,
+                $map_zoom  = 16;
             /* ZOOM SETTING */
 
             //google map custom marker icon
-            var $marker_url = 'img/google-map-marker.png';
-
+            
             //we define here the style of the map
             var style = [{
                 "stylers" : [{
@@ -74,7 +73,7 @@ jQuery(function ($) {
                 }, {
                     "saturation" : 100
                 }, {
-                    "gamma" : 1.15
+                    "gamma" : 1
                 }, {
                     "lightness" : 5
                 }]
@@ -98,8 +97,7 @@ jQuery(function ($) {
             var marker = new google.maps.Marker({
                 position : new google.maps.LatLng($latitude, $longitude),
                 map      : map,
-                visible  : true,
-                icon     : $marker_url
+                visible  : true
             });
         }
     }());

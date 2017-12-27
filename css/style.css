@@ -381,9 +381,9 @@ button:focus,
     }
 
 .jumbotron .content p.lead {
-    font-size   : 24px;
+    font-size   : 20px;
     line-height : 1.5em;
-    color       : rgba(255, 255, 255, .7);
+    color       : #000000;
     }
 
 .jumbotron .content .event-date {
@@ -437,10 +437,13 @@ button:focus,
  * About Event
  *-----------------------------------------------*/
 .about-event .lead {
-    font-size   : 19px;
+    font-size   : 17px;
     line-height : 1.7em;
     }
-
+.leead{
+    font-size   : 16px;
+    line-height : 1.7em;
+}
 .about-event address {
     font-size   : 15px;
     color       : #888888;
@@ -474,14 +477,14 @@ button:focus,
     }
 
 .team .thumbnail .caption {
-    padding          : 10px;
+    padding          : 2px;
     }
 
 .team .thumbnail h3 {
     font-size        : 16px;
     font-weight: bold;
 
-    margin           : 0 40px;
+    margin           : 0 20px;
     text-transform   : uppercase;
     padding          : 10px 0;
     }
